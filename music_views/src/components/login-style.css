@@ -1,0 +1,14 @@
+.styleCon {
+  width: 50vw;
+  padding: 3.2rem;
+  backdrop-filter: blur(20px);
+  margin-bottom: 2rem;
+}
+.pad {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+.loginHeading-style {
+  color: azure;
+}

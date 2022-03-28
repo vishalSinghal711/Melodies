@@ -1,0 +1,32 @@
+{
+  "name": "Melody_apis",
+  "version": "1.0.0",
+  "description": "this is a music app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "test": "jest",
+    "test-watch": "jest --watchAll --detectOpenHandles"
+  },
+  "keywords": [
+    "melody",
+    "app",
+    "apis"
+  ],
+  "author": "Vishal Singhal",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+    "morgan": "^1.10.0",
+    "supertest": "^6.1.6"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "jest": "^27.2.4",
+    "nodemon": "^2.0.13"
+  }
+}

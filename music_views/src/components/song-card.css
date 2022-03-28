@@ -1,0 +1,101 @@
+.category_list_card {
+  width: 15vw;
+  height: 17vw;
+  margin: 0 0.62rem 0 0.62rem;
+  padding: 0.22rem;
+  box-sizing: border-box;
+}
+.category_list_card:hover img {
+  transform: scale(1.05);
+  opacity: 0.8;
+  z-index: -5;
+}
+#deleteBtn {
+  z-index: 0;
+  transform: scale(1.1);
+}
+.category_list_card > div {
+  width: 90%;
+  height: 58%;
+  position: relative;
+  border-radius: 0.31rem;
+  overflow: hidden;
+}
+#thumbnailDiv {
+  border: solid;
+  border-color: azure;
+  border-width: 1px;
+  width: 90%;
+  height: 68%;
+  position: relative;
+  border-radius: 0.41rem;
+  overflow: hidden;
+}
+
+.list_card_control {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.control_style {
+  color: black;
+  font-size: 1.5rem;
+}
+.playBtn_style {
+  color: black;
+  font-size: 1.5rem;
+  background-color: rgba(231, 82, 107, 0.47);
+  padding: 0.62rem 0.62rem 0.62rem 0.875rem;
+  border-radius: 1.56rem;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+}
+
+.category_list_card img {
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.31rem;
+  transition: 0.3s;
+}
+
+.category_list_cardTagName {
+  font-size: 0.9rem;
+  overflow-x: hidden;
+  margin-top: 0.31rem;
+  color: azure;
+
+  /* TO READ ABOUT */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.category_list_cardContentName {
+  margin-top: -8px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  /* TO READ ABOUT */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  max-lines: 1;
+  font-size: 0.8rem;
+  color: rgba(231, 82, 107, 0.8);
+}
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 1rem;
+  max-height: 2rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
