@@ -11,6 +11,8 @@ It is a Minimal Reliable Music Web Application made using MERN Stack which has b
 
 # User
 
+## Singers
+![alt text](https://github.com/vishalSinghal711/Melodies/blob/master/Images/user_view_1.png)
 ## Search by Singer
 ![alt text](https://github.com/vishalSinghal711/Melodies/blob/master/Images/User%20View.png)
 ## Shared Music Player
