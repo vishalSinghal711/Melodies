@@ -3,6 +3,10 @@ import { useRef } from "react";
 import { doAjax } from "../utils/ajax";
 import { useEffect, useState } from "react";
 import "./song-card.css";
+import sortaz from "../assets/sortaz.png";
+import sortza from "../assets/sortza.png";
+import deleteIcon from "../assets/delete.png";
+
 export const DeleteSong = ({ user, props }) => {
   const [songs, setSongs] = useState([]);
   const [loaded, setLoaded] = useState(false);
@@ -115,7 +119,7 @@ export const DeleteSong = ({ user, props }) => {
                 margin: "5px",
                 padding: "5px",
               }}
-              src="https://image.flaticon.com/icons/png/512/475/475288.png"
+              src={sortza}
               alt="filter desc"
             />
             <img
@@ -129,7 +133,7 @@ export const DeleteSong = ({ user, props }) => {
                 margin: "5px",
                 padding: "5px",
               }}
-              src="https://image.flaticon.com/icons/png/512/714/714525.png"
+              src={sortaz}
               alt="filter asc"
             />
           </div>
@@ -180,7 +184,7 @@ export const DeleteSong = ({ user, props }) => {
                             onClick={() => {
                               deleteSong(song, user);
                             }}
-                            src="https://image.flaticon.com/icons/png/512/1632/1632602.png"
+                            src={deleteIcon}
                             alt="Remove Song"
                             style={{
                               width: "32px",

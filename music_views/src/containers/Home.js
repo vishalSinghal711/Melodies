@@ -2,6 +2,8 @@ import { Login } from "../components/Login";
 import React, { useState } from "react";
 import { Register } from "../components/Register";
 import "./home.css";
+import logo from "../assets/logo.png";
+// import { ReactComponent as Logo } from "../assets/logo.png";
 
 export const Home = () => {
   const [isRegister, setRegister] = useState(false);
@@ -16,10 +18,8 @@ export const Home = () => {
   return (
     <div id="homeMain">
       <div id="heading">
-        <img
-          src="https://image.flaticon.com/icons/png/512/3208/3208679.png"
-          alt="logo"
-        />
+        <img src={logo} alt="logo" />
+        {/* <Logo></Logo> */}
         <h1>Melodies</h1>
       </div>
 
