@@ -16,7 +16,7 @@ It is a Minimal Reliable Music Web Application made using MERN Stack which has b
 
 # Installing
 - Clone the project and open it in desired Editor.
-- Go to Each Directly Separately.
+- Go to Each Directory Separately.
 - Delete node_modules directory and package-lock.json file from both directories(music_views and music_apis). 
 - Run npm install.
 - Run npm start for both directories separately.
