@@ -1,6 +1,6 @@
 // DB Connection
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://vishalsinghal741_db_user:imZCfYzxLwoxvXUk@cluster0.70qlnkv.mongodb.net/',
+mongoose.connect(mongodb+srv://vishalsinghal741_db_user:imZCfYzxLwoxvXUk@cluster0.70qlnkv.mongodb.net/,
 {poolSize:5}, (err=>{
     if(err){
         console.log('Problem in DB Connection');
