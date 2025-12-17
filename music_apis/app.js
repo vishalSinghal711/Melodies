@@ -32,6 +32,18 @@ app.use(cors());
 app.use(express.json());
 
 
+app.get("/", (req, res) => {
+  res.send(`
+    <html>
+      <body>
+        <script>
+          alert("✅ Server is running on port ${process.env.PORT || 2345}");
+        </script>
+        <h3>Server is running</h3>
+      </body>
+    </html>
+  `);
+});
 
 app.use("/", require("./routes/user.routes")); // / root or Home
 app.use("/", require("./routes/music.routes"));
