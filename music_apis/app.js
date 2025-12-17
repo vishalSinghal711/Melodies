@@ -31,20 +31,7 @@ app.use(cors());
 // to enable Json conversion for every request,response
 app.use(express.json());
 
-// Adding Middlewares for specific matching request
-app.get("/", (req, res) => {
-  res.send(`
-    <html>
-      <head>
-        <title>Server Status</title>
-      </head>
-      <body>
-        <h2>✅ Server is running</h2>
-        <p>Port: ${process.env.PORT || 2345}</p>
-      </body>
-    </html>
-  `);
-});
+
 
 app.use("/", require("./routes/user.routes")); // / root or Home
 app.use("/", require("./routes/music.routes"));
