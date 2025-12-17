@@ -1,13 +1,18 @@
-// DB Connection
+
 const mongoose = require('mongoose');
 const uri = "mongodb+srv://vishalsinghal741_db_user:<db_password>@cluster0.70qlnkv.mongodb.net/?appName=Cluster0";
-mongoose.connect(uri,
-{poolSize:5}, (err=>{
-    if(err){
-        console.log('Problem in DB Connection');
-    }
-    else{
-        console.log('DB Connection Created....');
-    }
-}));
-module.exports = mongoose;
+
+const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
+
+async function run() {
+  try {
+    // Create a Mongoose client with a MongoClientOptions object to set the Stable API version
+    await mongoose.connect(uri, clientOptions);
+    await mongoose.connection.db.admin().command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await mongoose.disconnect();
+  }
+}
+run().catch(console.dir);
