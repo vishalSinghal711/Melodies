@@ -7,8 +7,10 @@ const http = require("http");
 // creating the server with the app which knows how to react to requests
 const server = http.createServer(app);
 
+const PORT = process.env.PORT || 2345;
+
 // listening at port 2345 and if there is err consoling it
-const port = server.listen(2345, (err) => {
+const port = server.listen(PORT, (err) => {
   if (err) {
     console.log(err);
   } else {
