@@ -1,7 +1,6 @@
 // DB Connection
 const mongoose = require('mongoose');
-mongoose.connect(process.env.DB_URL,
-//mongoose.connect('mongodb+srv://brainmentors:123456789brain@cluster0.elcns.mongodb.net/musicdb?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://vishalsinghal741_db_user:imZCfYzxLwoxvXUk@cluster0.70qlnkv.mongodb.net/',
 {poolSize:5}, (err=>{
     if(err){
         console.log('Problem in DB Connection');
